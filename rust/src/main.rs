@@ -22,7 +22,7 @@ impl Default for Stats {
 fn main() {
     // Create data structure for holding our info:
     let mut data = HashMap::new();
-    let f = File::open("./data/measurements.txt").unwrap();
+    let f = File::open("../data/measurements.txt").unwrap();
     let f = BufReader::new(f);
 
     let mut count: u32 = 0;
