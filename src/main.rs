@@ -27,7 +27,7 @@ fn main() {
 
     let mut count: u32 = 0;
     for line in f.lines().flatten() {
-        if count.wrapping_rem(1000000) == 0 {
+        if count.wrapping_rem(1_000_000) == 0 {
             println!("@{count}")
         }
         let (city, temp) = if let Some((city, temp)) = line.split_once(';') {
